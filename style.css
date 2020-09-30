@@ -1,0 +1,39 @@
+body {
+  background-color: blueviolet;
+}
+
+input {
+  display: block;
+  margin: 10px;
+  border: 1px solid grey;
+  height: 30px;
+  width: 170px;
+  background-color: gainsboro;
+  border-radius: 5px;
+  color: blueviolet;
+}
+input:focus {
+  outline-color: blueviolet;
+}
+
+button:focus {
+  outline-color: blueviolet;
+}
+
+button {
+  margin-left: 10px;
+  height: 30px;
+  width: 175px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  color: blueviolet;
+}
+
+.form-bg {
+  background-color: aliceblue;
+  padding: 10px;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

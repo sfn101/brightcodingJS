@@ -27,13 +27,17 @@ button {
   border: 1px solid grey;
   border-radius: 5px;
   color: blueviolet;
+  font-weight: bold;
 }
 
 .form-bg {
   background-color: aliceblue;
   padding: 10px;
-  height: 20vh;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#sing {
+  color: darkslategray;
 }

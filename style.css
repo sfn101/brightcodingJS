@@ -1,5 +1,17 @@
 body {
-  background-color: blueviolet;
+  background-color: rgba(138, 43, 226, 30);
+}
+
+body::before {
+  content: ' ';
+  background-image: url(/10_1.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: 0.75;
 }
 
 input {
@@ -26,18 +38,39 @@ button {
   width: 175px;
   border: 1px solid grey;
   border-radius: 5px;
-  color: blueviolet;
+  color: darkslategray;
   font-weight: bold;
 }
-
+.wrap {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .form-bg {
+  width: 50%;
+  min-width: 220px;
   background-color: aliceblue;
   padding: 10px;
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid grey;
+  border-radius: 5px;
 }
 #sing {
+  margin: 0px 10px;
   color: darkslategray;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+@media (min-width: 725px) {
+  .form-bg {
+    width: 20%;
+  }
 }

@@ -39,12 +39,12 @@ button {
   border-radius: 5px;
   color: darkslategray;
   font-weight: bold;
-  margin: auto;
 }
 .wrap {
   position: relative;
   height: 90vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -55,11 +55,13 @@ button {
   padding: 10px;
   min-height: 200px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border: 1px solid grey;
   border-radius: 5px;
 }
+
 #sing {
   margin: 0px 10px;
   color: darkslategray;
@@ -71,6 +73,7 @@ button {
 
 .feedback {
   padding: 10px;
+  margin-left: 10px;
 }
 
 @media (min-width: 725px) {

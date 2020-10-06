@@ -73,7 +73,8 @@ button {
 
 .feedback {
   padding: 10px;
-  margin-left: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 @media (min-width: 725px) {

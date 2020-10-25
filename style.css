@@ -4,7 +4,7 @@ body {
 
 body::before {
   content: " ";
-  background-image: url(/10_1.jpg);
+  background-image: url(img/10_1.jpg);
   background-size: cover;
   background-attachment: fixed;
   position: fixed;

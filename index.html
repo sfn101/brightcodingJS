@@ -10,24 +10,62 @@
     <div class="wrap">
       <div class="form-bg">
         <form class="my-form">
-          <h2 id="sing">sign in</h2>
+          <h2 id="sing">add member</h2>
+          <input
+            required
+            type="text"
+            name="firstName"
+            id="my-first-name"
+            placeholder="first name"
+          />
+          <input
+            required
+            type="text"
+            name="lastName"
+            id="my-last-name"
+            placeholder="last name"
+          />
           <input
             type="text"
             name="username"
-            id="my-username"
-            placeholder="your username here"
+            id="user-name"
+            placeholder="username"
           />
-          <input
-            type="text"
-            name="password"
-            id="my-password"
-            placeholder="your password here"
-          />
-          <button type="submit">submit</button>
+          <input type="checkbox" name="active" id="user-active" /><label
+            for="active"
+            >user is active</label
+          >
+          <button type="submit">add</button>
         </form>
-        <div class="feedback"></div>
+        <!-- <div class="feedback"></div> -->
+      </div>
+      <div class="list-bg">
+        <ul></ul>
       </div>
     </div>
+    <!-- <script src="calc.js"></script> -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyD0ysrdMaCBeaIVMoNF3TalR96IW1CF0UQ",
+        authDomain: "brightcoding-js.firebaseapp.com",
+        databaseURL: "https://brightcoding-js.firebaseio.com",
+        projectId: "brightcoding-js",
+        storageBucket: "brightcoding-js.appspot.com",
+        messagingSenderId: "695561975944",
+        appId: "1:695561975944:web:e8b9b372548aad6a33c73d",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
